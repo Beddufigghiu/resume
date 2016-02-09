@@ -1,0 +1,327 @@
+ .jumbotron {
+     height: 700px;
+ }
+ 
+ #myName {
+     font-weight: bold; 
+     font-size: 3em;
+     margin-top: 10px;
+ }
+ 
+ .text-align-center {
+     text-align: center;
+ }
+ 
+ .background-blue-light {
+     background-color: #2DA9D7;
+ }
+ 
+ .background-light-grey {
+     background-color: #F5F4F4;
+ }
+ 
+ .white-text {
+     color: #ecf0f1;
+ }
+
+.grey-light-text {
+    color: #E4DCEF;
+}
+
+.grey-dark-text {
+    color: #7E858B;
+}
+ 
+.blue-dark {
+    color: #34495E;
+}
+ 
+ #picture {
+     margin: 240px auto 0;
+     width: 190px;
+     border-radius: 15px;
+     display: block;
+     border:3px solid #FFFFFD;
+ }
+
+ #footer-jumbotron {
+     margin-top: 10px;
+ }
+ 
+ #footer-jumbotron p {
+     font-size: 1.2em;
+     font-style: italic;  
+ }
+ 
+ .bottom-border {
+     border-bottom: solid 1px #E3E4E4;
+     padding-bottom: 40px;
+     margin-bottom: 20px
+ }
+ 
+ .bottom-border-dark {
+     border-bottom: solid 1px #D9D7CB;
+     padding-bottom: 40px;
+     margin-bottom: 50px
+ }
+
+ 
+ .title {
+     font-size: 3.8em;
+     margin-bottom: 30px;
+     padding-top: 50px;
+     color: #2DA9D7;
+ }
+ 
+ .title-1 {
+     
+ }
+ 
+ .title-1 h2{
+     color: #2DA9D7;
+ }
+ 
+ .title-2 {
+ }
+ 
+ .title-2 h3 {
+     font-weight: bold;
+     font-size: 1.5em;
+     color: #0278AE; 
+ }
+ 
+ .title-2 p {
+     font-style: italic;
+ }
+ 
+ .title-3 {
+ }
+ 
+ .title-3 h3 {
+     font-weight: bold;
+     font-size: 1.5em;
+ }
+ 
+ .padding-left-0 {
+     padding-left: 0 !important;
+ }
+ 
+ .skills-list {
+ }
+ 
+ .skills-list ul {
+     padding-left: 0;
+ }
+ .skills-list li {
+     margin: 4px 0;
+     list-style: none;
+ }
+ 
+ .skills-list img {
+     float: right;
+     width: 18px;
+     padding-right: 1px;
+     margin-top: 1px;
+ }
+ 
+ .skills-list h3 {
+     padding-left: 50px;
+ }
+ 
+ .padding-right-30 {
+     padding-right: 30px;
+ }
+
+ .padding-bottom-20 {
+     padding-bottom: 20px;
+ }
+
+ .padding-bottom-50 {
+     padding-bottom: 50px;
+ }
+
+ .padding-bottom-40 {
+     padding-bottom: 40px;
+ }
+
+.margins-fix {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-top-10 {
+    padding-top: 5px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-left-30 {
+    margin-left: 10px;
+}
+
+.margin-right-5 {
+    margin-right: 5px;
+}
+ 
+ .padding-left-30 {
+     padding-left: 30px;
+ }
+ 
+ #Skills {
+     /*todo*/
+ }
+ 
+ #Skills h3 {
+     /*padding-top: 5px;*/
+ }
+ 
+ .icon-top {
+ }
+
+.icon {
+    padding-top: 2px;
+}
+
+.icon img {
+    width: 25px;
+}
+ 
+ #Others {
+     margin-bottom: 50px;
+ }
+ 
+ #Others ul {
+     margin-top: 30px;
+     padding-left: 0;
+ }
+ 
+ #Others li {
+     list-style: none;
+     padding-bottom: 10px;
+     
+ }
+
+.fa-bookmark-o {
+    padding-top: 2px;
+}
+
+
+#Others h3 {
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+     
+#message {
+    height: 150px;
+}
+
+.links {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.links ul{
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.links li {
+    list-style: none;
+}
+
+.break {
+    clear: both;
+}
+
+#messageMe {
+    cursor: pointer;
+}
+
+.italic {
+    font-style: italic !important;
+}
+
+#Projects h2 {
+    margin-bottom: 50px;
+}
+
+#Footer {
+    height: 500px;
+    padding-top: 120px;
+    background-color: #434242;
+}
+
+.icon-link-container {
+    padding-top: 22px;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.margin-fix-map {
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+#Footer p {
+    margin-bottom: 5px;
+}
+
+.fa-ul {
+    margin: 0 0 0 23px !important;
+}
+
+.fa-ul li {
+    padding-left: 5px;
+}
+
+#About p {
+    font-size: 1.2em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container h4 {
+    color: #5E5757;
+}
+
+#Italy {
+    margin-top: -3px;
+}
+
+#UK {
+    margin-top: -11px;
+    margin-left: -5px;
+}
+
+#UK img {
+    width: 40px;
+}
+
+#France {    
+    margin-top: -8px;
+}
+
+#France img {
+    width: 30px;
+}
+
+#credits {
+    padding: 0 5px;
+    font-size: 0.9em;
+}
+
+#footer-ref {
+    font-size: 0.9em;
+}

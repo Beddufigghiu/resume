@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<title>Shaun Di Salvo</title>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified jQuery -->
+<script type="text/javascript" src="jquery/jquery-1.12.0.min.js"></script>
+<!-- Latest compiled and minified bootstrap javscript -->
+<script type="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  
+<!-- Font Awesome -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.css">
+    
+<!-- My scripts -->
+<script type="text/javascript" src="scr/jsscript.js"></script>
+    
+<!-- My Styles -->
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<!--Modal Form for Sending email -->
+<div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <?php echo $result; ?>
+        <h4 class="modal-title" id="myModalLabel">Let's get in touch!</h4>
+      </div>
+      <div class="modal-body">
+        <form method="post" role="form" id="contact-form">
+          <div class="form-group">
+            <label for="name" class="control-label">Your Name:</label>
+            <input type="text" class="form-control" name="name" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email" class="control-label">Your Email:</label>
+            <input type="email" class="form-control" name="email" id="email">
+          </div>
+          <div class="form-group">
+            <label for="message" class="control-label">Your Message:</label>
+            <textarea class="form-control" name="message" id="message"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <input type="submit" name="submit" id="submit" class="btn btn-primary" value="Submit" form="contact-form">
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+
+    
+    <!-- Main jumbotron from Bootstrap example -->
+    <div class="jumbotron background-blue-light white-text">
+      <div class="container">
+          <div class="col-md-6 col-md-offset-3">
+            <img  id="picture" src="img/2016-01-02%2016.07.13.jpg" />
+              <h2 class="text-center" id="myName">Shaun Di Salvo</h2>
+              <p class="lead text-center">Aerospace Engineer</p>
+              <div class="links">
+                  <ul>
+                    <li class="pull-left"><a id="messageMe" data-toggle="modal" data-target="#messageModal" class="contact blue-dark"><i class="fa fa-envelope fa-2x"></i></a></li>
+                    <li class="pull-right"><a href="https://fr.linkedin.com/in/shaundisalvo" class="blue-dark" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                  </ul>
+              </div>
+              <div class="break"></div>
+              <div id="footer-jumbotron">
+                <p class="white-text text-center">Toulouse, France</p>
+              </div>      
+          </div>
+      </div>
+    </div>
+    
+
+    <!-- About Container -->
+    <div id="About">
+        <div class="container">
+            <div class="row padding-bottom-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="text-center title">About me</h1>
+                    <p class="grey-dark-text">
+                        I'm an Aerospace Engineer with a strong passion for all all kind of technologies.<br />
+                        Born in Montreal, raised in southern Italy and lived in France for a while, I have studied and worked as an engineer across three countries.
+                        I started my career writing code for flight simulators, which somehow helped me finding my way into flight testing. 
+                        After three years of crunching code on "grounded cockpits”, I decided to go back to school and pursue a one year Master in flight testing, 
+                        a great experience that has got me working for somewhat more than three years in France.
+                        While not at work I love getting my hands dirty on self-started projects, going from web technologies, hardware tinkering down to wood crafting.
+                        Being a famous rock guitarist, a fighter pilot or simply one of the A-Team's has always been my childhood dream.
+                        Beside my professional accomplishments the things I really couldn't live without are my sweet daughter and my stellar wife.<br />
+                        I am currently living in Toulouse, France.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Experince container -->
+    <div id="Experience" class="background-light-grey">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center title">Experience</h1>
+            </div>
+            <!--Education -->
+            <div class="row padding-bottom-20">
+                <div class="col-md-2 title-1">
+                    <h2 class="margin-bottom-30">Education</h2>
+                </div>
+                <div class="col-md-3 title-2">
+                    <h3 class="pull-left">Supaero - ISAE</h3><div class="icon-link-container"><i id="Supaero" class="fa fa-external-link fa-lg"></i></div>
+                    <div class="break"></div>
+                    <i id="SupaeroMap" class="fa fa-map-marker fa-lg"></i>
+                    <p>Toulouse, France <span style="font-style: normal">|</span> 2011-2012</p>
+                </div>
+                <div class="col-md-7 title-3">
+                    <h3>Specialized Master in Flight Test Engineering</h3>
+                    <p>Flight Test Techniques and Experimentation | Aviation Regulation | Flight Sessions | Human Factors</p>
+                </div>
+            </div>
+            
+            <div class="row padding-bottom-20">
+                <div class="col-md-3 col-md-offset-2 title-2">
+                    <h3 class="pull-left">Concordia University</h3><div class="icon-link-container"><i id="Concordia" class="fa fa-external-link fa-lg"></i></div>
+                    <div class="break"></div>
+                    <i id="ConcordiaMap" class="fa fa-map-marker fa-lg"></i>
+                    <p>Montreal, Canada <span style="font-style: normal">|</span> 2007-2009</p>
+                </div>
+                <div class="col-md-7 title-3">
+                    <h3>Master of Aerospace Engineering</h3>
+                    <p>Flight Control Systems | Fly-by-wire | Avionics Navigation Systems | Mechtronics & Automation</p>
+                </div>
+            </div>
+            
+            <div class="row bottom-border-dark">
+                <div class="col-md-3 col-md-offset-2 title-2">
+                    <h3 class="pull-left">Univeristà di Palermo</h3><div class="icon-link-container"><i id="Unipa" class="fa fa-external-link fa-lg"></i></div>
+                    <div class="break"></div>
+                    <i id="UnipaMap" class="fa fa-map-marker fa-lg"></i>
+                    <p>Palermo, Italy <span style="font-style: normal">|</span> 2001-2006</p>
+                </div>
+                <div class="col-md-7 title-3">
+                    <h3>Bachelor of Aerospace Engineering</h3>
+                    <p>Aerodynamics | Flight Mechanics | Aircraft Systems | Propulsion | Aircraft Structures</p>
+                </div>
+            </div>
+            <!--Careers -->
+            <div class="row padding-bottom-40">
+                <div class="col-md-2 title-1">
+                    <h2 class="margin-bottom-30">Career</h2>
+                </div>
+                <div class="col-md-3 title-2">
+                    <h3 class="pull-left">Aeroconseil</h3><div class="icon-link-container"><i id="Aeroconseil" class="fa fa-external-link fa-lg"></i></div>
+                    <div class="break"></div>
+                    <i id="AeroconseilMap" class="fa fa-map-marker fa-lg"></i>
+                    <p>Toulouse<span style="font-style: normal"> | </span>Oct 2012-present</p>
+                </div>
+                <div class="col-md-7 title-3">
+                    <h3>Autopilot Systems Test Engineer</h3>
+                    <h4 class="grey-dark-text">Airbus Single Aisle program</h4>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Preparation and execution of tests on integration simulators</li>
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Analysis of flight test data for development and certification programs</li>
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Support for flight briefings, telemetry and debriefings</li>
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Development and update of flight test tools and aircraft flight test databases</li>
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Redaction of test reports and certification cards</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row padding-bottom-40">
+                <div class="col-md-3 col-md-offset-2 title-2">
+                    <h3 class="pull-left">Assystem</h3><div class="icon-link-container"><i id="Assystem" class="fa fa-external-link fa-lg"></i></div>
+                    <div class="break"></div>
+                    <i id="AssystemMap" class="fa fa-map-marker fa-lg"></i>
+                    <p>Toulouse<span style="font-style: normal"> | </span>April 2012-Sept 2012</p>
+                </div>
+                <div class="col-md-7 title-3">
+                    <h3>Engine Systems Test Engineer</h3>
+                    <h4>Interniship project: Airbus Single Aisle program</h4>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Validation of a new PHC (Pitot Heat Computer) on Airbus test benches</li>
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Analysis of flight test data for engine systems (Nacelle, FADEC, APU, Bleed)</li>
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Redaction of laboratory test reports</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row padding-bottom-40">
+                <div class="col-md-3 col-md-offset-2 title-2">
+                    <h3 class="pull-left">ENSCO Avionics</h3><div class="icon-link-container"><i id="Ensco" class="fa fa-external-link fa-lg"></i></div>
+                    <div class="break"></div>
+                    <i id="EnscoMap" class="fa fa-map-marker fa-lg"></i>
+                    <p>Montreal<span style="font-style: normal"> | </span>Jun 2011-Aug 2011</p>
+                </div>
+                <div class="col-md-7 title-3">
+                    <h3>Engine Control Systems Engineer</h3>
+                    <h4 class="grey-dark-text">Pratt & Whitney Pure Power PW800 program</h4>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Analysis of FADEC system and functional requirements</li>
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Development and refinement of high level system requirements</li>
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Software design and documentation reviews</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row padding-bottom-50">
+                <div class="col-md-3 col-md-offset-2 title-2">
+                    <h3 class="pull-left">Mechtronix Systems</h3><div class="icon-link-container"><i id="Mechtronix"  class="fa fa-external-link fa-lg"></i></div>
+                    <div class="break"></div>
+                    <i id="MechtronixMap" class="fa fa-map-marker fa-lg"></i>
+                    <p>Montreal<span style="font-style: normal"> | </span>Sept 2008-Jun 2011</p>
+                </div>
+                <div class="col-md-7 title-3">
+                    <h3>Aircraft Systems Simulation Engineer</h3>
+                    <h4 class="grey-dark-text">Multi-program software development and integration</h4>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Implementation of simulation models (C++) for flight simulators</li>
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Evaluation of simulation models with pilots, customers and authorities</li>
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Integration specialist on a wide range of aircraft programs</li>
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Technical support on qualification and certification phases</li>
+                            <li><i class="fa-li fa fa-fighter-jet"></i>Redaction of aircraft systems test documents</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Skills Container -->
+    <div id="Skills">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center title">Skills</h1>
+            </div>
+            <!--Software -->
+            <div class="row bottom-border">
+                <div class="col-md-3 title-1">
+                    <h2 class="margin-bottom-30">Software</h2>
+                </div>
+                <div class="col-md-3 skills-list padding-right-30">
+                    <div class="icon-top"><div class="pull-left icon"><i class="fa fa-wrench fa-lg"></i></div><h3>Tools</h3></div>
+                        <ul id="skills_1">
+                            <script>
+                                rating("skills_1", "MS Office", 4);
+                                rating("skills_1", "Matlab/Simulink", 3);
+                                rating("skills_1", "Catia v5", 2);
+                                rating("skills_1", "Patran", 1);
+                                rating("skills_1", "Ansys/Fluent", 1);
+                                rating("skills_1", "Labview", 1);                            
+                            </script>
+                        </ul>
+                </div>
+                <div class="col-md-3 skills-list padding-right-30">
+                    <div class="icon-top"><div class="pull-left icon"><i class="fa fa-code fa-lg"></i></div><h3>Programming</h3></div>
+                        <ul id="skills_2">
+                            <script>
+                                rating("skills_2", "C++", 4);
+                                rating("skills_2", "HTML", 3);
+                                rating("skills_2", "Javascript", 3);
+                                rating("skills_2", "PHP", 1);
+                            </script>
+                        </ul>
+                </div>
+                <div class="col-md-3 skills-list padding-right-30">
+                    <div class="icon-top"><div class="pull-left icon"><i class="fa fa-television fa-lg"></i></div><h3>OS</h3></div>
+                        <ul id="skills_3">
+                            <script>
+                                rating("skills_3", "Windows", 4);
+                                rating("skills_3", "Unix", 2);
+                            </script>
+                        </ul>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="row padding-bottom-50">
+                <div class="col-md-3 title-1">
+                    <h2 class="margin-bottom-30">Languages</h2>
+                </div>
+                <div class="col-md-3 skills-list padding-right-30">
+                    <div class="icon-top"><div class="pull-left icon" id="Italy"><img src="img/coliseum5.png" /></div><h3>Italian</h3></div>
+                        <ul id="languages-1">
+                            <script>
+                                rating("languages-1", "Mother tongue", 5);
+                            </script>
+                        </ul>
+                </div>
+                <div class="col-md-3 skills-list padding-right-30">
+                    <div class="icon-top"><div class="pull-left icon" id="UK"><img src="img/london7.png" /></div><h3>English</h3></div>
+                        <ul id="languages-2">
+                            <script>
+                                rating("languages-2", "Bilingual", 5);
+                            </script>
+                        </ul>
+                </div>
+                <div class="col-md-3 skills-list padding-right-30">
+                    <div class="icon-top"><div class="pull-left icon" id="France"><img src="img/building109.png"/></div><h3>French</h3></div>
+                        <ul id="languages-3">
+                            <script>
+                                rating("languages-3", "Fluent", 4);
+                            </script>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--Projects -->
+        <div id="Projects" class="background-light-grey">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center title">Projects</h1>
+                </div>
+                <div class="row padding-bottom-40">
+                    <div class="col-md-2 title-1">
+                        <h2 class="margin-bottom-30">Academic</h2>
+                    </div>
+                    <div class="col-md-8 col-md-offset-2 title-3">
+                        <h3>Validation of a Pitot Heat Computer (PHC)</h3>
+                        <h4>Internship Project with Airbus | Assystem, September 2012</h4>
+                        <p>A complete system validation cycle has been carried out by testing and analyzing a new software standard of PHC (Probe Heat Computer) for Airbus Single Aisle products. The activities included lab testing, flight data analysis and redaction of a test report. Results are then used by Airbus in order to demonstrate compliance with design requirements and certification specification.</p>
+                    </div>
+                </div>
+                <div class="row padding-bottom-40">
+                    <div class="col-md-8 col-md-offset-4 title-3">
+                        <h3>Design of an Autopilot for a Flight Simulator</h3>
+                        <h4>Master's Final Project | Concordia University, July 2009</h4>
+                        <p>The idea of this project is to use a functional Beechcraft 200 flight simulator as a platform to implement and test autopilot control laws. The design of the control laws is performed in Simulink while the implementation on the simulator is done in C++. Classical linear control techniques are used to design control laws.</p>
+                    </div>
+                </div>
+                <div class="row padding-bottom-40">
+                    <div class="col-md-8 col-md-offset-4 title-3">
+                        <h3>Specification and Selection of a Brake Control System</h3>
+                        <h4>Case Study with Bombardier | McGill University, December 2008</h4>
+                        <p>The goal of this project is to define brake control system specification, present certification compliance plan and perform life cycle cost analysis, while simultaneously considering safety, performance and cost. Tools and techniques such as MMEL, FTA, and LCC analysis were used for the realization of the product.</p>
+                    </div>
+                </div>
+                <div class="row padding-bottom-40">
+                    <div class="col-md-8 col-md-offset-4 title-3">
+                        <h3>Computer vision controlled rover-robot</h3>
+                        <h4>Mechtronics & Automation Final Project | Concordia University, May 2008</h4>
+                        <p>This project consisted in designing and developing a basketball playing rover-robot which is able to perform two tasks: "dunking" and throwing a ping-pong ball in a net by means of autonomous control. The main control feature is a vision system made of a top viewing camera that enables computer vision algorithms written in C to process and control the robot actions.</p>
+                    </div>
+                </div>
+                <div class="row padding-bottom-40">
+                    <div class="col-md-8 col-md-offset-4 title-3">
+                        <h3>GPS simulation with MATLAB</h3>
+                        <h4>Avionics Navigation Systems Final Project | Concordia University, April 2008</h4>
+                        <p>The main task of this project was to compute the XYZ position of a user by processing navigation messages from six GPS satellites. All the data and all the information necessary to develop the algorithm were provided during the course. The main goal of this project was to demonstrate GPS principles by using simulation tools such as Matlab. </p>
+                    </div>
+                </div>
+                <div class="row padding-bottom-40">
+                    <div class="col-md-8 col-md-offset-4 title-3">
+                        <h3>F.E.M simulation with MATLAB</h3>
+                        <h4>Final Element Methods Final Project | Concordia University , August 2007 </h4>
+                        <p>A Matlab program that conducts the assembly of element matrices, imposition of boundary conditions and partitioning. A finite element methods algorithm finds the system solution and post-processing calculates the axial stresses and strains, principal stresses and strains, and Von Mises stresses in the element at any cross-section. </p>
+                    </div>
+                </div>
+                <div class="row padding-bottom-50">
+                    <div class="col-md-8 col-md-offset-4 title-3">
+                        <h3>F.E.M. analysis of composite panels under buckling</h3>
+                        <h4>Bachelor's Final Project | University of Palermo , July 2006</h4>
+                        <p>A parametric study that aims at understanding how buckling of laminated composite panels behave under simple axial compression loads. Different fibers orientation, sequence of lamination, sizes and boundary conditions are examined by means of F.E.M. simulations ran in Patran.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    
+    <div id="Others">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center title">Miscellaneous</h1>
+            </div>
+                <div class="row bottom-border-dark">
+                    <div class="col-md-4 title-1">
+                        <h2>Activities</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <ul>
+                            <li>
+                                <div class="icon-top">
+                                    <div class="pull-left icon"><i class="fa fa-laptop fa-lg pull-left icon"></i></div>
+                                    <h3>Coding</h3>
+                                </div>
+                                 My geek side; &lt;/html&gt; websites; javascript.games() and many other$; I love them all!
+                            </li>
+                            <li>
+                                <div class="icon-top">
+                                    <div class="pull-left icon"><i class="fa fa-plug fa-lg pull-left icon"></i></div>
+                                    <h3>Electronics</h3>
+                                </div>
+                                A bunch on unfinished projects on microcontrollers...
+                            </li>
+                            <li>
+                                <div class="icon-top">
+                                    <div class="pull-left icon"><i class="fa fa-music fa-lg pull-left icon"></i></div>
+                                    <h3>Guitars</h3>
+                                </div>
+                                Electric, acoustic or classic, just give me 6 strings and I shall move the world.
+                            </li>
+                            <li>
+                                <div class="icon-top">
+                                    <div class="pull-left icon"><i class="fa fa-trophy fa-lg pull-left icon"></i></div>
+                                    <h3>Running</h3>
+                                </div>
+                                I am currently training to run my first full marathon.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+				<div class="row bottom-border-dark">
+                    <div class="col-md-4 title-1">
+                        <h2>Passions</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <ul>
+                            <li>
+                                <div class="icon-top">
+                                    <div class="pull-left icon"><i class="fa fa-plane fa-lg pull-left icon"></i></div>
+                                    <h3>Aviation</h3>
+                                </div>
+                                Aircrafts, best machines ever made! Hope to earn my wings one day.
+                            </li>
+                            <li>
+                                <div class="icon-top">
+                                    <div class="pull-left icon"><i class="fa fa-volume-up fa-lg pull-left icon"></i></div>
+                                    <h3>Music</h3>
+                                </div>
+                                An audiophile wannabe obsessed with good sounding music. If only I had mad money to spend!
+							</li>
+                            <li>                        
+                                <div class="icon-top">
+                                    <div class="pull-left icon"><i class="fa fa-coffee fa-lg pull-left icon"></i></div>
+                                    <h3>Coffee</h3>
+                                </div>
+                                An endless quest for the perfect brew.
+							</li>
+                        </ul>
+                    </div>
+                </div>
+				<div class="row bottom-border-dark padding-top-20" >
+                    <div class="col-md-3 title-1">
+                        <h2 class="margins-fix">Bucket List</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-bookmark-o fa-lg"></i>Build a treehouse for my daughter.</li>
+                            <li><i class="fa-li fa fa-bookmark-o fa-lg"></i>Master the "Free bird" solo on guitar.</li>
+                            <li><i class="fa-li fa fa-bookmark-o fa-lg"></i>Learn to swear in Spanish.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="fa-ul">
+							<li><i class="fa-li fa fa-bookmark-o fa-lg"></i>Participate to an "Iron Man" triathlon.</li>
+							<li><i class="fa-li fa fa-bookmark-o fa-lg"></i>Witness the first human mission to Mars.</li>
+                        </ul>
+                    </div>
+                </div>
+				<div class="row padding-top-20">
+                    <div class="col-md-3 title-1">
+                        <h2 class="margins-fix">Fun facts</h2>
+                    </div>
+                    <div class="col-md-9">
+                        <ul class="fa-ul padding-top-10">
+                            <li> <i class="fa-li fa fa-bookmark-o fa-lg"></i>I can watch the "Back to the Future" trilogy over and over. I can't get enought of it!</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+    <div id="Footer">
+        <div class="container">
+            
+            <div class="row">
+                <p class="lead text-center white-text bold">Copyright © 2016 - made by Shaun</p>
+                <p id="footer-ref" class="text-center grey-dark-text">HTML | CSS | JavaScript | PHP | Bootstrap | jQuery</p>                
+            </div>
+            
+            <div class="row">
+                <div id="credits" class="grey-dark-text text-center">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+            </div>
+    
+        </div>
+    </div>
+
+</body>
+</html>
